@@ -35,7 +35,7 @@ public class CountTheVowels {
     private static final int THREE = 3;
     private static final int FOUR = 4;
 
-    private char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+    private final char[] vowels = {'a', 'e', 'i', 'o', 'u'};
     private char chr;
     private String userInput;
     private String stringToCount;
@@ -54,7 +54,7 @@ public class CountTheVowels {
         System.out.println();
         isEnded = false;
 
-        while (isEnded == false) {
+        while (!isEnded) {
             System.out.print(ENTER_STRING_TXT);
             userInput = scn.nextLine();
             stringToCount = userInput.toLowerCase();
