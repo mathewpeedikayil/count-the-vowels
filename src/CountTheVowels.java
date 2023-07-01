@@ -75,6 +75,8 @@ public class CountTheVowels {
             }
         }
 
+        scn.close();
+
         System.out.println(userInput + HAS_TXT + numberOfVowels + VOWELS_TXT);
         System.out.println(A_OCCURS_TXT + countOfA + TIMES_TXT);
         System.out.println(E_OCCURS_TXT + countOfE + TIMES_TXT);
