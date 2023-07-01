@@ -1,3 +1,15 @@
+/**
+ * CountTheVowels.java
+ * Created on 01/07/2023
+ * Last modified on 01/07/2023
+ * No copyright
+ * This class represents count the vowels.
+ * Version History: 1.0 - only pure code; 2.0 - comments added.
+ *
+ * @author Mathew Philip Peedikayil
+ * @version 2.0
+ */
+
 import java.util.Scanner;
 
 public class CountTheVowels {
@@ -35,6 +47,7 @@ public class CountTheVowels {
         lengthOfString = stringToCount.length();
         numberOfVowels = 0;
 
+        // total vowels present in the word
         for(int i = 0; i < lengthOfString; i++) {
             chr = stringToCount.charAt(i);
             if(chr == vowels[0] || chr == vowels[1] || chr == vowels[2] || chr == vowels[3] || chr == vowels[4]) {
@@ -42,6 +55,7 @@ public class CountTheVowels {
             }
         }
 
+        // count of each vowel A,E,I,O and U
         for(int j = 0; j < lengthOfString; j++) {
             chr = stringToCount.charAt(j);
             if(chr == vowels[0]) {
