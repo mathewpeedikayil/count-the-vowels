@@ -16,3 +16,6 @@ public class CountTheVowelsMain {
         word.countVowels();
     }
 }
+
+// Test Examples
+// Welcome, Apple, Alien, Guide, Movie
