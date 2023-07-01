@@ -29,6 +29,11 @@ public class CountTheVowels {
     private static final String O_OCCURS_TXT = "O occurs ";
     private static final String U_OCCURS_TXT = "U occurs ";
     private static final String QUIT_TXT = "quit";
+    private static final int ZERO = 0;
+    private static final int ONE = 1;
+    private static final int TWO = 2;
+    private static final int THREE = 3;
+    private static final int FOUR = 4;
 
     private char[] vowels = {'a', 'e', 'i', 'o', 'u'};
     private char chr;
@@ -54,12 +59,13 @@ public class CountTheVowels {
             userInput = scn.nextLine();
             stringToCount = userInput.toLowerCase();
             lengthOfString = stringToCount.length();
-            numberOfVowels = 0;
-            countOfA = 0;
-            countOfE = 0;
-            countOfI = 0;
-            countOfO = 0;
-            countOfU = 0;
+
+            numberOfVowels = ZERO;
+            countOfA = ZERO;
+            countOfE = ZERO;
+            countOfI = ZERO;
+            countOfO = ZERO;
+            countOfU = ZERO;
 
             if(userInput.equals(QUIT_TXT)) {
                 isEnded = true;
@@ -67,7 +73,8 @@ public class CountTheVowels {
                 // total vowels present in the word
                 for (int i = 0; i < lengthOfString; i++) {
                     chr = stringToCount.charAt(i);
-                    if (chr == vowels[0] || chr == vowels[1] || chr == vowels[2] || chr == vowels[3] || chr == vowels[4]) {
+                    if (chr == vowels[ZERO] || chr == vowels[ONE] || chr == vowels[TWO] ||
+                            chr == vowels[THREE] || chr == vowels[FOUR]) {
                         numberOfVowels++;
                     }
                 }
@@ -75,19 +82,19 @@ public class CountTheVowels {
                 // count of each vowel A,E,I,O and U
                 for (int j = 0; j < lengthOfString; j++) {
                     chr = stringToCount.charAt(j);
-                    if (chr == vowels[0]) {
+                    if (chr == vowels[ZERO]) {
                         countOfA++;
                     }
-                    if (chr == vowels[1]) {
+                    if (chr == vowels[ONE]) {
                         countOfE++;
                     }
-                    if (chr == vowels[2]) {
+                    if (chr == vowels[TWO]) {
                         countOfI++;
                     }
-                    if (chr == vowels[3]) {
+                    if (chr == vowels[THREE]) {
                         countOfO++;
                     }
-                    if (chr == vowels[4]) {
+                    if (chr == vowels[FOUR]) {
                         countOfU++;
                     }
                 }
